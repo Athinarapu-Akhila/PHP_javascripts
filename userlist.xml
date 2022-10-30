@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<!DOCTYPE userlist[
+<!ELEMENT userlist (user+)>
+<!ELEMENT user (name,password)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+]>
+<userlist>
+<user>
+<name>akhi</name>
+<password>akhi2001</password>
+</user>
+<user>
+<name>ajju</name>
+<password>ajju1022</password>
+</user>
+</userlist>

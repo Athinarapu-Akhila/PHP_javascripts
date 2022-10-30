@@ -1,0 +1,6 @@
+<!ELEMENT employee(e1+)
+<!ELEMENT e1 (eid,ename,esal,dept)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT esal (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>

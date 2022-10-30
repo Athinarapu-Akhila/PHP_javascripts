@@ -1,0 +1,60 @@
+internal dtd
+-----------------------------
+<?xml version="1.0"?>
+<!DOCTYPE employee [
+<!ELEMENT employee (e1+)>
+<!ELEMENT e1 (eid,ename,esal,dept)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT esal (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+]>
+<employee>
+    <e1>
+    <eid>201</eid>
+    <ename>akhila</ename>
+    <esal>30000</esal>
+    <dept>SE</dept>
+    </e1>
+    <e1>
+    <eid>202</eid>
+    <ename>akhila</ename>
+    <esal>30000</esal>
+    <dept>SE</dept>
+    </e1>
+</employee>
+
+-------------------------------------------------------------------------------------------------------------------------------
+Extrenal dtd
+-----------------------
+<?xml version="1.0"?>
+<!DOCTYPE employee  SYSTEM "emp.dtd">
+<employee>
+    <e1>
+    <eid>201</eid>
+    <ename>akhila</ename>
+    <esal>30000</esal>
+    <dept>SE</dept>
+    </e1>
+    <e1>
+    <eid>202</eid>
+    <ename>akhila</ename>
+    <esal>30000</esal>
+    <dept>SE</dept>
+    </e1>
+</employee>
+
+
+emp.dtd
+------------------------
+<!ELEMENT employee (e1+)>
+<!ELEMENT e1 (eid,ename,esal,dept)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT ename (#PCDATA)>
+<!ELEMENT esal (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>
+
+
+
+
+
